@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Grid and flexbox Layout</title>
+         <style>
+            body {
+                font-family: Arial, sans-serif;
+
+            }
+            .container {
+                display: grid;
+                gap: 16px;
+                padding: 20px;
+                max-width: 900px;
+                margin: auto;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+            }
+            @media (max-width: 760px){
+                .container {
+                    grid-template-columns:auto;
+                }
+            }
+         </style>      
+    
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="box">
+                <strong>Box 1</strong>
+                <p>Description for box 1</p>
+            </div>
+
+            <div class="box">
+                <strong>Box 2</strong>
+                <p>Description for box 2</p>
+            </div>
+
+            <div class="box">
+                <strong>Box 3</strong>
+                <p>Description for box 3</p>
+            </div>
+        </div>
+        
+        </body>
+</html>
